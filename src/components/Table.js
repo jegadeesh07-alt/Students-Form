@@ -14,7 +14,7 @@ const Table = () => {
             <Link to="/" className='show-form'>Show Form</Link>
             {
                 students.length === 0 ? (
-                    <p className='no-student'>no students yet.</p>
+                    <p className='no-student'>No students details.</p>
 
                 ) : (
                     <table className="table-data" border="1" cellPadding="8">
