@@ -22,7 +22,7 @@ export const DataProvider = ({ children }) => {
 
     const fetchStudents = async () => {
         try {
-            const response = await axios.get('http://localhost:3100/students')
+            const response = await axios.get('http://localhost:3200/students')
             setStudents(response.data)
         } catch (err) {
             console.error('error fetching students', err)
@@ -51,7 +51,7 @@ export const DataProvider = ({ children }) => {
     const handleDelete = async (id) => {
         console.log('Deleting student with id:', id);
         try {
-            await axios.delete(`http://localhost:3100/students/${id}`)
+            await axios.delete(`http://localhost:3200/students/${id}`)
             setStudents(prev => prev.filter(student => student.id !== id))
         } catch (err) {
             console.error('Delete error', err)
@@ -64,7 +64,7 @@ export const DataProvider = ({ children }) => {
 
         if (isEditing) {
             try {
-                await axios.put(`http://localhost:3100/students/${editingId}`, student)
+                await axios.put(`http://localhost:3200/students/${editingId}`, student)
                 setIsEditing(false)
                 setEditingId(null)
                 setStudent({ name: '', age: '', email: '' })
@@ -75,7 +75,7 @@ export const DataProvider = ({ children }) => {
             }
         } else {
             try {
-                await axios.post('http://localhost:3100/students', student)
+                await axios.post('http://localhost:3200/students', student)
                 setStudent({ name: '', age: '', email: '' })
                 fetchStudents()
             } catch (err) {
