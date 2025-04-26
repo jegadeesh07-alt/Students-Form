@@ -10,6 +10,8 @@ const App = () => {
 
   return (
     <div className='App'>
+      <div className="app-content">
+      
       <DataProvider>
       
 
@@ -21,7 +23,7 @@ const App = () => {
     </Routes>
     </DataProvider>
      
-
+    </div>
     </div>
   );
 };

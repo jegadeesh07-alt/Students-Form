@@ -1,34 +1,3 @@
 {
-  "students": [
-    {
-      "name": "Ranjith",
-      "age": "27",
-      "email": "ranjith21@gmail.com",
-      "id": "4828"
-    },
-    {
-      "name": "admin5",
-      "age": "25",
-      "email": "admin5@gmail.com",
-      "id": "9abc"
-    },
-    {
-      "id": "4610",
-      "name": "jegadeesh",
-      "age": "27",
-      "email": "jegadeesh200421@gmail.com"
-    },
-    {
-      "name": "sahas priyan",
-      "age": "27",
-      "email": "sahaspriyan21@gmail.com",
-      "id": "60a6"
-    },
-    {
-      "id": "dd78",
-      "name": "jegadeesh",
-      "age": "21",
-      "email": "jegadeesh200421@gmail.com"
-    }
-  ]
+  "students": []
 }

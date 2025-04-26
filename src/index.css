@@ -1,7 +1,8 @@
 * {
   margin: 0px;
   padding: 0px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "jost",sans-serif;
+
 
 }
 
@@ -10,36 +11,67 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
-  background-image: url("data:image/jpeg;base64,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");
   overflow-x: auto;
   overflow-y: auto;
-  background-repeat: no-repeat;   
-  background-size: cover;         
-  background-position: center;
+  background: linear-gradient(180deg, #E3E5E6 0%, #F2E8C4 100%);
+}
 
+.app-content{
+  border-radius: 20px;
+  height: 840px;
+  width: 642px;
+  margin-left: 25vw;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
 
-
+.log-image{
+  
+  height: 125px;
+  width: 130px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .student-form {
-  margin-top: 50px;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(49, 94, 102);
-  width: 400px;
-  margin-left: 33vw;
+  border: 1px solid #FFD85F;
   border-radius: 20px;
-  border: 2px solid rgb(0, 0, 0);
+  width: 624px;
+  height: 750px;
+}
+.label1, .label2, .label3{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  padding-top: 10px;
+  font-size: 20px; 
+ }
 
+ .textbox-1:focus{
+  border: 1px solid #FFD85F;
+  outline: none; 
+}
+
+.textbox-2:focus{
+  border: 1px solid #FFD85F;
+  outline: none;
+}
+.textbox-3:focus{
+  border: 1px solid #FFD85F;
+  outline: none;
 }
 
 .student-heading {
-  border: 2px solid rgb(0, 0, 0);
-  border-radius: 20px;
-  margin-top: 70px;
-  margin-bottom: 10px;
   height: 50px;
   width: 430px;
   display: flex;
@@ -47,9 +79,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  background:  rgb(36, 173, 23);
-  color: rgb(211, 16, 16);
-  margin-left: 33vw;
+  margin-bottom: 30px;
 }
 
 .textbox-1,
@@ -60,33 +90,38 @@
   flex-direction: column;
   justify-content: center;
   padding: 10px;
-  margin: 30px;
+  margin: 10px;
+  width: 300px;
+  border: 1px solid lightgray;
 }
 
+.submit-button:hover{
+  background-color: #f7c01b;
+}
 .submit-button {
+  height: 45px;
+  width: 320px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  font-size: 20px;
+  border: none;
   border-radius: 15px;
+  margin-top: 20px;
   cursor: pointer;
-  background-color: rgb(214, 168, 18);
-  color: black;
+  background-color:#FFD85F;  
 }
 
 .table-container {
   padding: 10px;
 
 
+
 }
 
 .table-data {
-  padding: 10px;
-  margin-left: 24vw;
-  margin-top: 20px;
-  background-color: aqua;
-  
+  border-radius : 10px 10px;
 }
 
 .edit-button {
@@ -108,34 +143,78 @@ h3 {
   margin-left: 50px;
 }
 
+.table-container {
+  margin-top: 30px;
+}
+
+.table-data {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  font-family: jost, sans-serif;
+  font-size: 16px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1); /* slight shadow for neat look */
+  border-radius: 10px;
+  overflow: hidden; /* rounded corners */
+}
+
+.table-data th, .table-data td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
 .table-head th {
-  padding: 10px;
-  background-color: lightslategray;
-  color: beige;
+  background-color: #f5f5f5;
+  color: black;
+  font-weight: 600;
 }
 
-.table-body td {
-  padding: 10px;
-  background-color: crimson;
-  color: beige;
-
+.table-body tr:nth-child(even) {
+  background-color: #f9f9f9; 
 }
 
-.show-tabel,
-.show-form {
+.table-body tr:hover {
+  background-color: #e6e6e6;
+  cursor: pointer;
+}
+
+.edit-button {
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: #2980b9;
+}
+
+.no-student {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
+  color: #FFD85F;
+}
+
+
+.show-table {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 30px;
-  margin-left: 43vw;
-  background-color: rgb(238, 172, 29);
-  border: 2px solid black;
-  height: 30px;
-  width: 150px;
-  color: rgb(0, 0, 0);
+  border: 2px solid #E1AA00;
+  color: #000;
+  height: 40px;
+  width: 320px;
+  margin-top: 15px;
   border-radius: 10px;
   text-decoration: none;
+  font-size: 20px;
 
 }
 

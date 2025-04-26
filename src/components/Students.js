@@ -13,10 +13,15 @@ const StudentForm = () => {
     const { handleChange, handleSubmit, student, isEditing } = context
     return (
         <div style={{ padding: '1rem' }}>
-            <h1 className='student-heading'>Student Registration</h1>
+            
+           
             <form className='student-form' onSubmit={handleSubmit} style={{ padding: '1rem' }}>
+                <div className="logo">
+                      <img className="log-image" src="https://www.yuvakabaddi.com/_next/image?url=https%3A%2F%2Fstatic.yuvakabaddi.com%2Fimages%2Fteam-logos%2F672.png&w=640&q=75" alt="can't reload " />
+                     </div>
+            <h1 className='student-heading'>Student Registration</h1>
                 <div className='form-content'>
-
+                        <label className="label1">Full Name</label>
                     <input
                         className='textbox-1'
                         type="text"
@@ -28,19 +33,19 @@ const StudentForm = () => {
                     />
                 </div>
                 <div>
-
+                <label className="label2">Date of Birth</label>
                     <input
                         className='textbox-2'
-                        type="number"
+                        type="date"
                         name="age"
                         value={student.age}
                         onChange={handleChange}
                         required
-                        placeholder='Enter your age'
+                        placeholder='Enter your DOB'
                     />
                 </div>
                 <div>
-
+                <label className="label3">E-Mail</label>
                     <input
                         className='textbox-3'
                         type="email"
@@ -48,7 +53,7 @@ const StudentForm = () => {
                         value={student.email}
                         onChange={handleChange}
                         required
-                        placeholder='Enter your Email'
+                        placeholder='Enter your E-mail'
                     />
                 </div>
                 <button
@@ -56,9 +61,10 @@ const StudentForm = () => {
                     type="submit">
                     {isEditing ? 'Save' : 'Submit'}
                 </button>
+                <Link to="/table" className="show-table">View Students</Link>
             </form>
 
-            <Link to="/table" className="show-tabel">View Students</Link>
+            
 
 
         </div>
