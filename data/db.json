@@ -1,3 +1,10 @@
 {
-  "students": []
+  "students": [
+    {
+      "id": "0081",
+      "name": "Ranjith",
+      "age": "1998-04-22",
+      "email": "ranjith21@gmail.com"
+    }
+  ]
 }

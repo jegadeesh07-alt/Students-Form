@@ -48,6 +48,7 @@
   border-radius: 20px;
   width: 624px;
   height: 750px;
+  box-shadow :5px 5px 0px 0px #ebd289;
 }
 .label1, .label2, .label3{
   display: flex;

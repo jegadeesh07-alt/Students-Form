@@ -13,7 +13,10 @@ const Table = () => {
         <div className="table-container">
             {
                 students.length === 0 ? (
-                    <p className='no-student'>No students details.</p>
+                    <p className='no-student'>No students details.
+                    <Link to="/">View Form</Link>
+                    </p>
+                    
 
                 ) : (
                     <table className="table-data" cellSpacing={0} border={1}>
